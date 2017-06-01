@@ -1,19 +1,26 @@
 <?php
+class First{
 	public $id = 51;
-	public $name = "Mighty Tighty";
+	protected $name = "Mighty Tighty";
 	
 
-	public function speakAlound(){
-		echo "Sassy little old woman with tatooed breasts";
+	public function speakAloud($say){
+		echo $say;
 
 	}
 }
 
-class Second extends First{
 
+
+class Second extends First{
+	public function getName(){
+		echo $this->name;
+	}
+	
 }
 
 $second = new Second;
-echo $second->name;
-}
+//echo $second->speakAloud("Lukewarm ice cream...");
+echo $second->getName();
+
 ?>  
