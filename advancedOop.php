@@ -8,6 +8,6 @@
 	$air = new Air;
 
 	$land -> greetStudents();
-	$air -> discourageStudents();
+	$air -> greetStudents();
 
 ?>
